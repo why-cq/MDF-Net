@@ -102,7 +102,7 @@ def heat_show(img_path):
     # cv2.waitKey(0)
     plt.figure("Image")  # 图像窗口名称
     plt.imshow(superimposed_img)
-    plt.title('origin_image')  # 图像题目
+    plt.title('origin_image')  # 图像题目title
     plt.show()
 
 
