@@ -42,7 +42,7 @@ mscoco/
 
 [MSCOCO 2014](https://cocodataset.org/#download) 数据集的所有源图像和注释文件置于`mscoco/feature/coco2014`路径下。
 
-__注意:__ 为了进一步加快训练速度，也可以将数据集中所有图像的特征提取出来并保存为npz文件，可以在`mscoco/feature`路径下新建目录存储特征文件，训练和验证时需要将数据集读取改为[coco_dataset.py](datasets/coco_dataset.py)和[data_loader.py](datasets/data_loader.py)中的方式。同时也需要修改[pure_transformer.py](models/pure_transformer.py)（主要就是删除掉Backbone模块的定义，其余类和函数的接口应该是通用的）。
+__注意:__ 为了进一步加快训练速度，也可以将数据集中所有图像的特征提取出来并保存为npz文件，可以在`mscoco/feature`路径下新建目录存储特征文件，训练和验证时需要将数据集读取改为[coco_dataset.py](datasets/coco_dataset.py)和[data_loader.py](datasets/data_loader.py)中的方式。
 
 ## 模型训练
 
